@@ -79,18 +79,25 @@
 
 
 
-<meta name="description" content="开发过程中对于线上项目崩溃我使用的是友盟统计，它会收集到线上的崩溃日志，根据崩溃日志我们可以快速定位到代码中崩溃位置。 我们可以到友盟统计的报表中心进行日志下载，方便我们记录工作。对于日志分析我推荐用“dSYM”软件来进行分析。 我们先导出之前打包到App Store的源文件，把源文件拖到dSYM中，再根据日志填入对应的数据，这样我们就可以快速定位到崩溃的地方了！">
+<meta name="description" content="开发过程中对于线上项目崩溃我使用的是友盟统计，它会收集到线上的崩溃日志，根据崩溃日志我们可以快速定位到代码中崩溃位置。 我们可以到友盟统计的报表中心进行日志下载，方便我们记录工作。对于日志分析我推荐用“dSYM”软件来进行分析。 我们先导出之前打包到App Store的源文件 把源文件拖到dSYM中，再根据日志填入对应的数据，这样我们就可以快速定位到崩溃的地方了！">
 <meta property="og:type" content="article">
 <meta property="og:title" content="线上崩溃的解决办法">
 <meta property="og:url" content="http://yoursite.com/2018/08/17/线上崩溃的解决办法/index.html">
 <meta property="og:site_name" content="博客小站">
-<meta property="og:description" content="开发过程中对于线上项目崩溃我使用的是友盟统计，它会收集到线上的崩溃日志，根据崩溃日志我们可以快速定位到代码中崩溃位置。 我们可以到友盟统计的报表中心进行日志下载，方便我们记录工作。对于日志分析我推荐用“dSYM”软件来进行分析。 我们先导出之前打包到App Store的源文件，把源文件拖到dSYM中，再根据日志填入对应的数据，这样我们就可以快速定位到崩溃的地方了！">
+<meta property="og:description" content="开发过程中对于线上项目崩溃我使用的是友盟统计，它会收集到线上的崩溃日志，根据崩溃日志我们可以快速定位到代码中崩溃位置。 我们可以到友盟统计的报表中心进行日志下载，方便我们记录工作。对于日志分析我推荐用“dSYM”软件来进行分析。 我们先导出之前打包到App Store的源文件 把源文件拖到dSYM中，再根据日志填入对应的数据，这样我们就可以快速定位到崩溃的地方了！">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/08/17/线上崩溃的解决办法/友盟统计崩溃日志.jpg">
-<meta property="og:updated_time" content="2018-08-17T07:05:51.451Z">
+<meta property="og:image" content="http://yoursite.com/2018/08/17/线上崩溃的解决办法/报表中心.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/08/17/线上崩溃的解决办法/日志分析.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/08/17/线上崩溃的解决办法/日志分析界面.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/08/17/线上崩溃的解决办法/源文件.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/08/17/线上崩溃的解决办法/源文件2.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/08/17/线上崩溃的解决办法/日志.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/08/17/线上崩溃的解决办法/分析实例.jpg">
+<meta property="og:updated_time" content="2018-08-17T07:15:45.177Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="线上崩溃的解决办法">
-<meta name="twitter:description" content="开发过程中对于线上项目崩溃我使用的是友盟统计，它会收集到线上的崩溃日志，根据崩溃日志我们可以快速定位到代码中崩溃位置。 我们可以到友盟统计的报表中心进行日志下载，方便我们记录工作。对于日志分析我推荐用“dSYM”软件来进行分析。 我们先导出之前打包到App Store的源文件，把源文件拖到dSYM中，再根据日志填入对应的数据，这样我们就可以快速定位到崩溃的地方了！">
+<meta name="twitter:description" content="开发过程中对于线上项目崩溃我使用的是友盟统计，它会收集到线上的崩溃日志，根据崩溃日志我们可以快速定位到代码中崩溃位置。 我们可以到友盟统计的报表中心进行日志下载，方便我们记录工作。对于日志分析我推荐用“dSYM”软件来进行分析。 我们先导出之前打包到App Store的源文件 把源文件拖到dSYM中，再根据日志填入对应的数据，这样我们就可以快速定位到崩溃的地方了！">
 <meta name="twitter:image" content="http://yoursite.com/2018/08/17/线上崩溃的解决办法/友盟统计崩溃日志.jpg">
 
 
@@ -301,9 +308,10 @@
       
 
       
-        <p>开发过程中对于线上项目崩溃我使用的是友盟统计，它会收集到线上的崩溃日志，根据崩溃日志我们可以快速定位到代码中崩溃位置。<br><img src="/2018/08/17/线上崩溃的解决办法/友盟统计崩溃日志.jpg" title="This is an example image"></p>
-<p>我们可以到友盟统计的报表中心进行日志下载，方便我们记录工作。对于日志分析我推荐用“dSYM”软件来进行分析。</p>
-<p>我们先导出之前打包到App Store的源文件，把源文件拖到dSYM中，再根据日志填入对应的数据，这样我们就可以快速定位到崩溃的地方了！</p>
+        <p>开发过程中对于线上项目崩溃我使用的是友盟统计，它会收集到线上的崩溃日志，根据崩溃日志我们可以快速定位到代码中崩溃位置。<br><img src="/2018/08/17/线上崩溃的解决办法/友盟统计崩溃日志.jpg" title="友盟统计崩溃日志"></p>
+<p>我们可以到友盟统计的报表中心进行日志下载，方便我们记录工作。<br><img src="/2018/08/17/线上崩溃的解决办法/报表中心.jpg" title="报表中心"><br>对于日志分析我推荐用“dSYM”软件来进行分析。<br><img src="/2018/08/17/线上崩溃的解决办法/日志分析.jpg" title="日志分析软件"><br><img src="/2018/08/17/线上崩溃的解决办法/日志分析界面.jpg" title="日志分析界面"></p>
+<p>我们先导出之前打包到App Store的源文件<br><img src="/2018/08/17/线上崩溃的解决办法/源文件.jpg" title="源文件"><br><img src="/2018/08/17/线上崩溃的解决办法/源文件2.jpg" title="源文件内容"></p>
+<p>把源文件拖到dSYM中，再根据日志填入对应的数据，这样我们就可以快速定位到崩溃的地方了！<br><img src="/2018/08/17/线上崩溃的解决办法/日志.jpg" title="日志"><br><img src="/2018/08/17/线上崩溃的解决办法/分析实例.jpg" title="分析实例"></p>
 
       
     </div>
